@@ -17,6 +17,7 @@ source "$SCRIPTDIR/util.sh"
 
 echo Installing OpenWhisk packages
 
+runPackageInstallScript "$SCRIPTDIR" installDeploy.sh
 runPackageInstallScript "$SCRIPTDIR" installCombinators.sh
 runPackageInstallScript "$SCRIPTDIR" installGit.sh
 runPackageInstallScript "$SCRIPTDIR" installSlack.sh
