@@ -18,6 +18,7 @@ tasks.withType(Test) {
 }
 
 task testWithoutCredentials(type: Test) {
+    exclude 'packages/deploy/**'
     exclude 'packages/watson/**'
     exclude 'packages/slack/**'
     exclude 'packages/weather/**'
